@@ -1,0 +1,31 @@
+{
+  "name": "bdnsx",
+  "version": "0.1.0",
+  "private": true,
+  "description": "bDNSX lease service: rent OpNS names held by the vault, signed B+MAP+AIP lease records, resolver API",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "dev": "tsc -p tsconfig.json && node dist/server.js",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "vectors": "tsc -p tsconfig.json && node dist/genVectors.js"
+  },
+  "dependencies": {
+    "@bsv/sdk": "^2.8.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
