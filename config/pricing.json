@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "currency": "USD",
+  "buyUsd": { "1-2": 500, "3": 100, "4": 50, "5+": 10 },
+  "leaseRatePerYear": 0.15,
+  "adoption": {
+    "metric": "activeLeases + ownedNames",
+    "steps": [
+      { "min": 0, "multiplier": 1.0 },
+      { "min": 250, "multiplier": 1.1 },
+      { "min": 1000, "multiplier": 1.25 },
+      { "min": 2500, "multiplier": 1.5 },
+      { "min": 5000, "multiplier": 2.0 },
+      { "min": 10000, "multiplier": 3.0 }
+    ]
+  },
+  "renewalCapPctPerYear": 25,
+  "minYears": 1,
+  "maxYears": 10,
+  "prepayFreeYears": {},
+  "paymentTolerancePct": 3
+}
