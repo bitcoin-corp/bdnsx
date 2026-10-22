@@ -41,6 +41,7 @@ Renters prove control of their key with a BSM signature (base64 compact) over a 
 | transfer (out) | `bdnsx:transfer:<name>:<fromKey>:<toKey>:<until>` | current renter → `fromsig` |
 | transfer (accept) | `bdnsx:accept:<name>:<fromKey>:<toKey>:<until>` | new renter → `tosig` |
 | link | `bdnsx:link:<domain>:<key>` | key holder, published at TXT `_bdnsx.<domain>` |
+| revoke | `bdnsx:revoke:<name>:<renterKey>:<reason>` | owner key (`BDNSX_OWNER_PUBKEY`), checked before the vault publishes |
 
 The payment txid is the nonce: each payment can be used once, so a captured signature cannot be replayed.
 
