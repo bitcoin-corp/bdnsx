@@ -1,9 +1,10 @@
 # bDNSX lease service (v1)
 
+**Licence: [Open BSV License version 4](LICENSE)**, © The Bitcoin Corporation Ltd. (GitHub labels it "Other" because it is not on GitHub's standard licence list.)
+
 Rent OpNS names that the vault holds, by the year. Each lease is a public record on chain
 (B + MAP `app=bdnsx` + AIP signed by the vault key). A resolver answers "who is this name pointing at right now".
 
-Spec: [`docs/OPNS-RENTAL-PLAN.md`](docs/OPNS-RENTAL-PLAN.md), [`docs/BDNSX-PLAN.md`](docs/BDNSX-PLAN.md).
 Record formats and test vectors: [`spec/RECORDS.md`](spec/RECORDS.md), [`spec/vectors.json`](spec/vectors.json).
 
 ## Run locally
